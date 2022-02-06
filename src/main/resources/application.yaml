@@ -1,0 +1,17 @@
+camunda:
+  bpm:
+    admin-user:
+      id: demo
+      password: demo
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:camunda-h2-database
+  data:
+    mongodb:
+      authentication-database: admin
+      username: rootuser
+      password: rootpass
+      database: context
+      port: 27017
+      host: localhost
